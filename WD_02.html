@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+    <title>Stop Watch By Darsh Kunjithaya</title>
+      
+</head>
+<body>
+    <header>
+        <h1>Welcome to Stop Watch</h1>
+        <p>Time is what we want most, but what we use worst.</p>
+
+    </header>
+    <div class="content">
+        <div class="stopwatch-container">
+            <section class="stopwatch-section">
+                <h2>Stopwatch</h2>
+                <div class="stopwatch">
+                    <div id="display">00:00:00</div>
+                    <div class="controls">
+                        <button id="startStopBtn">Start</button>
+                        <button id="resetBtn">Reset</button>
+                        <button id="lapBtn">Lap</button>
+                    </div>
+                    <div id="laps"></div>
+                </div>
+            </section>
+           
+            <div class="export">
+                <button id="exportLapsBtn">Export Laps</button>
+                <button id="importLapsBtn">Import Laps</button>
+                <input type="file" id="fileInput" style="display:none;">
+            </div>
+        </div>
+    </div>
+
+    <section class="countdown-section">
+        <h2>Countdown Timer</h2>
+        <div class="countdown">
+            <input type="number" id="countdownMinutesInput" placeholder="Minutes">
+            <input type="number" id="countdownSecondsInput" placeholder="Seconds">
+            <button id="setCountdownBtn">Set Countdown</button>
+            <button id="pauseCountdownBtn">Pause</button>
+            <button id="resetCountdownBtn">Reset Countdown</button>
+            <div id="countdownDisplay">00:00</div>
+        </div>
+    </section>
+    <script src="js/home.js"></script>
+</body>
+</html>
